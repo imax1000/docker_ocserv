@@ -1,4 +1,5 @@
 .env
 config/ocpasswd
-config/config-per-user
-config/ocserv
+config/config-per-user/
+#config/ocserv.conf
+fullchain.
