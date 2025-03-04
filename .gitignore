@@ -1,1 +1,4 @@
 .env
+config/ocpasswd
+config/config-per-user
+config/ocserv

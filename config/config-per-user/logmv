@@ -1,5 +1,0 @@
-explicit-ipv4 = 10.20.0.106
-#route = 192.168.2.0/24
-route = default
-dns = 8.8.8.8
-#no-dns

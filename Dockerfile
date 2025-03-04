@@ -16,12 +16,12 @@ RUN yum install -y epel-release && \
     yum install -y ocserv iptables iperf
 
 VOLUME /etc/ocserv/ocserv.conf
-VOLUME /etc/ocserv/config-per-user
+VOLUME /etc/ocserv/config-per-user/
 VOLUME /etc/ocserv/ocpasswd
 
 WORKDIR /etc/ocserv
 
-COPY ${PWD}/config/docker-entrypoint.sh /entrypoint.sh
+COPY ${PWD}/entrypoint.sh /entrypoint.sh
 
 EXPOSE $LISTEN_PORT/tcp
 EXPOSE $LISTEN_PORT/udp
