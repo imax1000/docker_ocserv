@@ -2,4 +2,5 @@
 config/ocpasswd
 config/config-per-user/
 #config/ocserv.conf
-fullchain.
+config/fullchain.pem
+config/privkey.pem

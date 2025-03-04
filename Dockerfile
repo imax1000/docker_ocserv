@@ -15,9 +15,9 @@ ENV HOSTNAME 	ihomevpn.sytes.net
 RUN yum install -y epel-release && \
     yum install -y ocserv iptables iperf
 
-VOLUME /etc/ocserv/ocserv.conf
-VOLUME /etc/ocserv/config-per-user/
-VOLUME /etc/ocserv/ocpasswd
+VOLUME /etc/ocserv/
+#VOLUME /etc/ocserv/config-per-user/
+#VOLUME /etc/ocserv/ocpasswd
 
 WORKDIR /etc/ocserv
 

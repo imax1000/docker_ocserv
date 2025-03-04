@@ -4,14 +4,16 @@
 docker run  \
     --publish 7443:443/tcp \
     --publish 7443:443/udp \
-    --volume ./config/ocserv.conf:/etc/ocserv/ocserv.conf \
-    --volume ./config/config-per-user/:/etc/ocserv/config-per-user/ \
-    --volume ./config/ocpasswd:/etc/ocserv/ocpasswd \
+    --mount type=bind,src=./config,dst=/etc/ocserv \
     --rm \
     --name ocserv \
-    imax1000/ocserv:1.0.2 \
+    imax1000/ocserv:1.0.2
 #    --detach \
 
+
+#    --volume ./config/ocserv.conf:/etc/ocserv/ocserv.conf \
+#    --volume ./config/config-per-user/:/etc/ocserv/config-per-user/ \
+#    --volume ./config/ocpasswd:/etc/ocserv/ocpasswd \
     
     
 #docker run -d \
