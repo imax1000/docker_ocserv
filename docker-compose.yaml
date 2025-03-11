@@ -1,0 +1,15 @@
+services:
+  ocserv:
+    image: imax1000/ocserv:1.0.2
+    restart: always
+    container_name: ocserv
+    privileged: true
+    hostname: ihomevpn.sytes.net
+    ports:
+      - 7443:443/udp
+      - 7443:443/tcp
+#    environment:
+#      - HC_CA_CN=My CA
+#      - HC_CA_ORG=My Corp
+#      - HC_CA_DAYS=3650
+#      - HC_SRV_CN=vpn.myorg.com
